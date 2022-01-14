@@ -1,0 +1,129 @@
+.aminities--container {
+  width: 100%;
+  padding: 84px 5vw;
+  position: relative;
+}
+
+.aminities--wrapper {
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.aminities--title {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 64px;
+}
+
+.aminities--title h2 {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.aminities--title p {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.aminities--list .aminities--listitem + .aminities--listitem {
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 992px) {
+  .aminities--list .aminities--listitem:nth-child(2n + 2) .aminities--content {
+    order: 1;
+  }
+  .aminities--list .aminities--listitem:nth-child(2n + 2) .aminities--figure {
+    order: 2;
+  }
+}
+
+.aminities--listitem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-column-gap: 84px;
+}
+
+.aminities--listitem .aminities--content .aminities--content--title {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.aminities--listitem .aminities--content .aminities--content--title .count {
+  color: #f0f2f3;
+  font-size: 64px;
+  position: absolute !important;
+  font-weight: 600;
+  left: -12px;
+  top: -42px;
+  z-index: -1;
+  letter-spacing: 4px;
+}
+
+.aminities--listitem .aminities--content .aminities--content--content {
+  color: #616161;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+
+.aminities--listitem .aminities--figure {
+  position: relative;
+  overflow: hidden;
+  padding-top: 70%;
+  border-radius: 12px;
+  background-color: white;
+  width: 100%;
+}
+
+.aminities--listitem .aminities--figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .aminities--container {
+    padding: 48px 16px;
+  }
+  .aminities--listitem {
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
+  }
+  .aminities--list .aminities--listitem + .aminities--listitem {
+    margin-top: 48px;
+  }
+  .aminities--title {
+    margin-bottom: 48px;
+  }
+  .aminities--title h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .aminities--title p {
+    font-size: 16px;
+  }
+  .aminities--listitem .aminities--content .aminities--content--title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .aminities--listitem .aminities--content .aminities--content--title .count {
+    font-size: 52px;
+    top: -32px;
+  }
+}
