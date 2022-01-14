@@ -1,0 +1,81 @@
+.finalcta--container {
+  width: 100%;
+  padding: 84px 5vw;
+  position: relative;
+}
+
+.finalcta--wrapper {
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  border-radius: 12px;
+  padding: 64px 64px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.finalcta--wrapper h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.finalcta--wrapper p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+
+.finalcta--wrapper .finatBtn {
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 15px 72px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #ff5858;
+  margin-bottom: 48px;
+}
+
+.hero--container .hero--wrapper .hero--content .hero__button:hover {
+  filter: brightness(95%);
+}
+
+.finalcta--wrapper > span {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 767px) {
+  .finalcta--container {
+    padding: 16px 16px 48px;
+  }
+  .finalcta--wrapper {
+    padding: 32px 24px 16px;
+    text-align: center;
+  }
+  .finalcta--wrapper h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .finalcta--wrapper p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .finalcta--wrapper .finatBtn {
+    padding: 15px 45px;
+    margin-bottom: 24px;
+  }
+}
