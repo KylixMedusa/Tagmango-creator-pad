@@ -2,13 +2,16 @@ import React, { useEffect, useState, memo } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 import { PopupButton } from "@typeform/embed-react";
 import "./Hero.css";
+import Home from "../assets/home.png";
+import Workspace from "../assets/workspace-2.jpg";
 import Office from "../assets/Office.jpg";
-import Lounge from "../assets/Lounge.jpg";
-import Space from "../assets/Space.jpg";
+import Lounge from "../assets/lounge_chill-4.jpg";
+import PlayZone from "../assets/pool.jpg";
+import Space from "../assets/background-1.jpg";
 
 const Hero = () => {
   const texts = ["Home", "Workspace", "Office", "Lounge", "Play-zone", "Space"];
-  const backgrounds = [Office, Lounge, Space, Lounge, Office, Space];
+  const backgrounds = [Home, Workspace, Office, Lounge, PlayZone, Space];
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
