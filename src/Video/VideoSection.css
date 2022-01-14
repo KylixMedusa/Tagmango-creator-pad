@@ -1,0 +1,155 @@
+.video-section {
+  padding: 0 5vw;
+  margin-bottom: 5vw;
+}
+
+.video-section .video-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+.video-section .video-section__container .video-section__text-container {
+  margin-top: 5vh;
+}
+
+.video-section .video-section__container .video-section__text-container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  color: #f18926;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.video-section .video-section__container .video-section__text-container span:before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 12px;
+  height: 2px;
+  background: #f18926;
+  margin-right: 8px;
+}
+
+.video-section .video-section__container .video-section__text-container h2 {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.video-section .video-section__container .video-section__text-container p {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .video-section .video-section__container .video-section__text-container h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .video-section .video-section__container .video-section__text-container p {
+    font-size: 16px;
+  }
+}
+
+.video-section .video-section__container .video-section__video-container {
+  padding: 12vh 0 8vh;
+  background-image: url(../assets/VideoBackground.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.video-section .video-section__container .video-section__video-container .video-section__video {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 12px;
+  background-image: url(../assets/VideoThumbnail.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.video-section .video-section__container .video-section__video-container .video-section__video button {
+  width: 17%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: 0;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.video-section .video-section__container .video-section__video-container .video-section__video button svg {
+  width: 33%;
+  height: auto;
+  aspect-ratio: 1;
+  margin-left: 8%;
+}
+
+.video-section .video-section__container .video-section__video-container .video-section__video:hover button {
+  background-color: #f18926;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 767px) {
+  .video-section .video-section__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .video-section .video-section__container .video-section__video-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .video-section .video-section__container .video-section__text-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+/*# sourceMappingURL=VideoSection.css.map */
