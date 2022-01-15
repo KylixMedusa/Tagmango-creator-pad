@@ -4,11 +4,10 @@ import { PopupButton } from "@typeform/embed-react";
 import "./Hero.css";
 
 const Hero = ({ loading }) => {
-  const texts = ["Home", "Workspace", "Office", "Lounge", "Play-zone", "Space"];
+  const texts = ["Home", "Workspace", "Lounge", "Play-zone", "Space"];
   const backgrounds = [
     "https://tagmango.com/staticassets/1642224576818.jpg",
     "https://tagmango.com/staticassets/1642224705016.jpg",
-    "https://tagmango.com/staticassets/1642224779501.jpg",
     "https://tagmango.com/staticassets/1642224886817.jpg",
     "https://tagmango.com/staticassets/1642224945484.jpg",
     "https://tagmango.com/staticassets/1642225006267.jpg",

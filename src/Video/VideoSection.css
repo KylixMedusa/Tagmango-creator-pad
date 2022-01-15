@@ -96,7 +96,9 @@
   width: 90%;
   margin: 0 auto;
   height: auto;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
+  position: relative;
+  padding-top: 56.25%;
   background-size: cover;
   background-position: center center;
   border-radius: 12px;
@@ -128,9 +130,9 @@
   .video-section__video-container
   .video-section__video
   button {
-  width: 17%;
-  height: auto;
-  aspect-ratio: 1;
+  width: 64px;
+  height: 64px;
+  /* aspect-ratio: 1; */
   border-radius: 50%;
   background-color: transparent;
   outline: 0;
@@ -152,6 +154,10 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .video-section

@@ -49,7 +49,7 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642185642264.jpg" alt="" /></figure>
+            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642186184017.jpeg" alt="" /></figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">03</span>The GODDAMN View 🏖️
@@ -76,7 +76,7 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642186184017.jpeg" alt="" /></figure>
+            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642185642264.jpg" alt="" /></figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">05</span>An Almost Olympic Sized Pool 🏖️

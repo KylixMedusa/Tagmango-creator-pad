@@ -21,6 +21,16 @@ const VideoSection = () => {
               Yet, what this economy has always lacked is a place where all
               like-minded folks could work, stay, network and create TOGETHER.
             </p>
+            <p>
+              And that’s why we have opened India’s first ever Creator House -
+              TagMango Creator Pad for you Creators who dare to dream.
+            </p>
+            <p>
+              A place where you have the - Freedom to Create, Connect and Chill.
+              And most importantly, a place for you to call HOME.
+            </p>
+            <p>So welcome Home, Creator.</p>
+            <p>Welcome to the TagMango Creator Pad!</p>
           </div>
           <div className="video-section__video-container">
             <div className="video-section__video">
