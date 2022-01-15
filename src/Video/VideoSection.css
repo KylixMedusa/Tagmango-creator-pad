@@ -130,9 +130,9 @@
   .video-section__video-container
   .video-section__video
   button {
-  width: 17%;
-  height: auto;
-  aspect-ratio: 1;
+  width: 64px;
+  height: 64px;
+  /* aspect-ratio: 1; */
   border-radius: 50%;
   background-color: transparent;
   outline: 0;
