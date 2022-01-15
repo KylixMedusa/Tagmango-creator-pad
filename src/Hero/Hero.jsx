@@ -118,7 +118,6 @@ const Hero = ({ loading }) => {
             <div className="hero--carousal__bar"></div>
             <div className="hero--carousal__bar"></div>
             <div className="hero--carousal__bar"></div>
-            <div className="hero--carousal__bar"></div>
           </div>
         </div>
       </div>

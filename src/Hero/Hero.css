@@ -94,7 +94,7 @@
   display: -ms-grid;
   display: grid;
   max-width: 680px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
 }
 
