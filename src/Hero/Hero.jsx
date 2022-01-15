@@ -21,17 +21,19 @@ const Hero = ({ loading }) => {
       intervalId = setInterval(
         () => {
           let current = document.querySelector(".active");
-          let next = current.nextElementSibling;
-          if (next) {
-            current.classList.remove("active");
-            next.classList.add("active");
-          } else {
-            current.classList.remove("active");
-            document
-              .querySelector(".hero--carousal")
-              .firstElementChild.classList.add("active");
+          if (current) {
+            let next = current?.nextElementSibling;
+            if (next) {
+              current.classList.remove("active");
+              next.classList.add("active");
+            } else {
+              current.classList.remove("active");
+              document
+                .querySelector(".hero--carousal")
+                .firstElementChild.classList.add("active");
+            }
+            setTextIndex((index) => index + 1);
           }
-          setTextIndex((index) => index + 1);
         },
         3000 // every 3 seconds
       );
