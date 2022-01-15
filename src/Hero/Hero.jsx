@@ -110,7 +110,9 @@ const Hero = ({ loading }) => {
             Book Now
           </PopupButton>
           <div className="hero--carousal">
-            <div className="hero--carousal__bar active"></div>
+            <div
+              className={`hero--carousal__bar ${loading ? "" : "active"}`}
+            ></div>
             <div className="hero--carousal__bar"></div>
             <div className="hero--carousal__bar"></div>
             <div className="hero--carousal__bar"></div>
