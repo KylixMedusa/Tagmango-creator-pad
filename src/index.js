@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/creatorpad">
+    <BrowserRouter basename="/creator-pad">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
