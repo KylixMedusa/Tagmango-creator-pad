@@ -55,7 +55,7 @@ const VideoSection = () => {
             width="100%"
           >
             <source
-              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+              src="https://tagmango.com/staticassets/TagMango+Launch+Video+FINAL.mp4"
               type="video/mp4"
             />
           </video>
