@@ -20,7 +20,7 @@ function App() {
     <>
       {isLoading && (
         <div className="fullscreen-modal">
-          <div class="loader">Loading...</div>
+          <div className="loader">Loading...</div>
         </div>
       )}
       <Hero loading={isLoading} />
