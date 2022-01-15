@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Hero from "./Hero/Hero";
 import Aminities from "./Aminities/Aminities";
@@ -7,9 +7,23 @@ import Footer from "./Footer/Footer";
 import VideoSection from "./Video/VideoSection";
 
 function App() {
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let interval = setTimeout(() => {
+      setLoading(false);
+    }, 2300);
+    return () => clearTimeout(interval);
+  }, []);
+
   return (
     <>
-      <Hero />
+      {isLoading && (
+        <div className="fullscreen-modal">
+          <div class="loader">Loading...</div>
+        </div>
+      )}
+      <Hero loading={isLoading} />
       <main>
         <VideoSection />
         <Aminities />

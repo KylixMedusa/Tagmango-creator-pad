@@ -3,7 +3,7 @@ import ReactTextTransition, { presets } from "react-text-transition";
 import { PopupButton } from "@typeform/embed-react";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({ loading }) => {
   const texts = ["Home", "Workspace", "Office", "Lounge", "Play-zone", "Space"];
   const backgrounds = [
     "https://tagmango.com/staticassets/1642224576818.jpg",
@@ -16,25 +16,30 @@ const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval(
-      () => {
-        let current = document.querySelector(".active");
-        let next = current.nextElementSibling;
-        if (next) {
-          current.classList.remove("active");
-          next.classList.add("active");
-        } else {
-          current.classList.remove("active");
-          document
-            .querySelector(".hero--carousal")
-            .firstElementChild.classList.add("active");
-        }
-        setTextIndex((index) => index + 1);
-      },
-      3000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
+    let intervalId;
+    if (!loading) {
+      intervalId = setInterval(
+        () => {
+          let current = document.querySelector(".active");
+          let next = current.nextElementSibling;
+          if (next) {
+            current.classList.remove("active");
+            next.classList.add("active");
+          } else {
+            current.classList.remove("active");
+            document
+              .querySelector(".hero--carousal")
+              .firstElementChild.classList.add("active");
+          }
+          setTextIndex((index) => index + 1);
+        },
+        3000 // every 3 seconds
+      );
+    }
+    return () => {
+      if (intervalId) clearTimeout(intervalId);
+    };
+  }, [loading]);
 
   return (
     <div
