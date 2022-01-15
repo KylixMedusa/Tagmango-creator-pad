@@ -12,11 +12,12 @@ const Hero = ({ loading }) => {
     "https://tagmango.com/staticassets/1642224945484.jpg",
     "https://tagmango.com/staticassets/1642225006267.jpg",
   ];
-  const [textIndex, setTextIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(3);
 
   useEffect(() => {
     let intervalId;
     if (!loading) {
+      setTextIndex(0);
       intervalId = setInterval(
         () => {
           let current = document.querySelector(".active");
@@ -41,6 +42,14 @@ const Hero = ({ loading }) => {
       if (intervalId) clearTimeout(intervalId);
     };
   }, [loading]);
+
+  useEffect(() => {
+    backgrounds.forEach((background) => {
+      const img = new Image();
+      img.src = background;
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div
