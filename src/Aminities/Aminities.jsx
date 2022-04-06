@@ -15,7 +15,12 @@ const Aminities = () => {
         </div>
         <div className="aminities--list">
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642185271253.jpg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642185271253.jpg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">01</span>Co-working the COOL way 🤘🏻
@@ -32,24 +37,31 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642185030206.png" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642185030206.png"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">02</span>WiFi that Usain Bolt uses 🚅
               </h3>
               <p className="aminities--content--content">
-                You stand and work? We have a tall desk. You want to lie down?
-                We got a hammock. You want to sunbathe while working? We got
-                that. You want to swing and watch the sunset? We do that too.
-              </p>
-              <p className="aminities--content--content">
-                If you’re a Creator, our doors are always open for you to work,
-                host meetings, and create content!
+                Okay that might be lame. We’re sure you’ll be able to come up
+                with better jokes on Google at break-neck speeds with our super
+                fast WiFI and connectivity. It's 24x7 as well! (Work at 3 am if
+                you want, as long as you don’t annoy our neighbours)
               </p>
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642186184017.jpeg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642186184017.jpeg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">03</span>The GODDAMN View 🏖️
@@ -62,7 +74,12 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642185839700.jpg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642185839700.jpg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">04</span>Accommodation like no other 🛌🏻
@@ -76,7 +93,12 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642185642264.jpg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642185642264.jpg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">05</span>An Almost Olympic Sized Pool 🏖️
@@ -90,7 +112,12 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642186429050.jpg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642186429050.jpg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">06</span>Outdoor Gym because why NOT?
@@ -103,7 +130,12 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642187276498.jpg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642187276498.jpg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">07</span>Elite Hospitality ✨
@@ -116,7 +148,12 @@ const Aminities = () => {
             </div>
           </div>
           <div className="aminities--listitem">
-            <figure className="aminities--figure"><img src="https://tagmango.com/staticassets/1642187058846.jpg" alt="" /></figure>
+            <figure className="aminities--figure">
+              <img
+                src="https://tagmango.com/staticassets/1642187058846.jpg"
+                alt=""
+              />
+            </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
                 <span className="count">08</span>Community Events you would LOVE
