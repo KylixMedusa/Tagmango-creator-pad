@@ -13,8 +13,9 @@ const VideoSection = () => {
       <section className="video-section">
         <div className="video-section__container">
           <div className="video-section__text-container">
-            <span>The Story</span>
-            <h2>TagMango Creator Pad</h2>
+            <h2>
+              <span>The Story</span>TagMango Creator Pad
+            </h2>
             <p>
               The Creator Economy impacts millions of people around the globe
               everyday through value, knowledge, entertainment and inspiration.

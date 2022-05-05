@@ -48,7 +48,6 @@ const Hero = ({ loading }) => {
       const img = new Image();
       img.src = background;
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
