@@ -1,6 +1,6 @@
 .aminities--container {
   width: 100%;
-  padding: 84px 5vw;
+  padding: 50px 5vw;
   position: relative;
 }
 
@@ -15,14 +15,15 @@
 .aminities--title {
   text-align: center;
   max-width: 750px;
-  margin: 0 auto 64px;
+  margin: 84px auto 50px;
 }
 
 .aminities--title h2 {
   color: #1a1a1a;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 12px;
+  margin-top: 120px;
 }
 
 .aminities--title p {
@@ -82,7 +83,7 @@
 .aminities--listitem .aminities--figure {
   position: relative;
   overflow: hidden;
-  padding-top: 70%;
+  padding-top: 85%;
   border-radius: 12px;
   background-color: white;
   width: 100%;
@@ -127,3 +128,175 @@
     top: -32px;
   }
 }
+
+.investorLogoBar {
+  text-align: center;
+  padding-top: 100px;
+}
+.investorLogoBar > p {
+  color: #f18926;
+  font-weight: 600;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.investorLogoBar > p b {
+  font-weight: 800;
+}
+.investorLogoBar .investorLogoBarInner {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 1296px;
+  padding: 0 0.31rem;
+}
+.investorLogoBar .investorLogoBarInner .investorBox {
+  width: auto;
+  background: #fff;
+  border-radius: 5rem;
+  box-shadow: 0 0.19rem 0.38rem 0 rgba(41, 70, 97, 0.3);
+  animation: float 7s ease-in-out infinite;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+  overflow: hidden;
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo.yc {
+  background-color: #fb651e;
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo.pf {
+  background-color: #000e35;
+  padding: 10px;
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo.pf img {
+  filter: invert(1);
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorTitle {
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  text-align: left;
+}
+.investorLogoBar .investorLogoBarInner .investorBox .investorSubtitle {
+  font-size: 0.75rem;
+  color: color(font-dark);
+  display: block;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0);
+    box-shadow: 0 0.19rem 0.38rem 0 rgba(41, 70, 97, 0.3);
+  }
+  50% {
+    transform: translatey(-10px);
+    box-shadow: 0 0.56rem 0.38rem 0 rgba(41, 70, 97, 0.15);
+  }
+  to {
+    transform: translatey(0);
+    box-shadow: 0 0.19rem 0.38rem 0 rgba(41, 70, 97, 0.3);
+  }
+}
+@media screen and (min-width: 62em) {
+  .investorLogoBar .investorLogoBarInner {
+    justify-content: space-around;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:nth-child(odd) {
+    margin-top: 2.5rem;
+    animation-delay: 0.5s;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:nth-child(2n) {
+    margin-top: -2.5rem;
+    animation-delay: 1.25s;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:first-child {
+    margin-top: 0;
+    animation-delay: 0s;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:nth-child(2) {
+    margin-top: -3.62rem;
+    animation-delay: 1.75s;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+  .investorLogoBar .investorLogoBarInner > .investorBox:last-child {
+    margin-top: 0.69rem;
+    animation-delay: 2s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .investorLogoBar .investorLogoBarInner {
+    box-shadow: 0 0.19rem 0.38rem 0 rgba(41, 70, 97, 0.3);
+    background: white;
+    border-radius: 12px;
+    width: calc(100% - 20px);
+    padding: 0;
+  }
+  .investorLogoBar .investorLogoBarInner .investorBox {
+    width: 50%;
+    animation: unset;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem 0.75rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .investorLogoBar .investorLogoBarInner .investorBox .investorLogo {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .investorLogoBar .investorLogoBarInner .investorBox .investorTitle,
+  .investorLogoBar .investorLogoBarInner .investorBox .investorSubtitle {
+    text-align: center;
+  }
+  .investorLogoBar .investorLogoBarInner .investorBox:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .investorLogoBar .investorLogoBarInner .investorBox:nth-child(1),
+  .investorLogoBar .investorLogoBarInner .investorBox:nth-child(3) {
+    border-right: 1px solid #e6e6e6;
+  }
+  .investorLogoBar > p {
+    margin-bottom: 20px;
+  }
+}
+
+.splide {
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+}
+
+.splide img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .splide__arrow,
+.splide__pagination {
+  display: none;
+} */

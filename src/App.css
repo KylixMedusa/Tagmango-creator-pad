@@ -39,3 +39,56 @@
     transform: rotate(360deg);
   }
 }
+
+a.apply_now_button {
+  background-color: #f18926;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 45px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  margin-top: 15px;
+}
+ul.coherts-list {
+  color: #616161;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.about-us-more-content p {
+  color: #616161;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.about-us-more-content {
+  margin: 40px 0 0;
+  display: block;
+}
+
+a.apply_now_white_button {
+  background-color: #fff;
+  color: #ff5858;
+  margin-bottom: 48px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 45px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  margin-top: 15px;
+}

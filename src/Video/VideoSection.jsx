@@ -17,31 +17,24 @@ const VideoSection = () => {
               <span>The Story</span>TagMango Creator Pad
             </h2>
             <p>
-              The Creator Economy impacts millions of people around the globe
-              everyday through value, knowledge, entertainment and inspiration.
-              Yet, what this economy has always lacked is a place where all
-              like-minded folks could work, stay, network and create TOGETHER.
+              History is testimony to the fact that the best ideas have come to fruition when people have come together.
+              <br />
+              Ideas that inspire generations.
+              <br />
+              Ideas that cause revolutions.
+              <br />
+              Ideas that have changed the world.
             </p>
+            <br></br>
             <p>
-              And that’s why we have opened India’s first ever Creator House -
-              TagMango Creator Pad for you Creators who dare to dream.
+              We have one such idea - to bring together like-minded people who are capable of shaping the future in
+              their respective fields. If you’re someone who dares to dream - TagMango Residency Programme is for you!
             </p>
-            <p>
-              A place where you have the - Freedom to Create, Connect and Chill.
-              And most importantly, a place for you to call HOME.
-            </p>
-            <p>So welcome Home, Creator.</p>
-            <p>Welcome to the TagMango Creator Pad!</p>
           </div>
           <div className="video-section__video-container">
             <div className="video-section__video">
               <button onClick={() => setShowingVideo(true)}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.025"
-                  height="24.938"
-                  viewBox="0 0 20.025 24.938"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.025" height="24.938" viewBox="0 0 20.025 24.938">
                   <g id="play" transform="translate(-25.2 -84.035)">
                     <path
                       id="Path_1106"
@@ -58,22 +51,10 @@ const VideoSection = () => {
       </section>
       {isShowingVideo && (
         <div className="fullscreen-modal">
-          <video
-            className="fullscreen-modal__video"
-            controlsList="nodownload"
-            autoPlay={true}
-            controls
-            width="100%"
-          >
-            <source
-              src="https://tagmango.com/staticassets/TagMango+Launch+Video+FINAL.mp4"
-              type="video/mp4"
-            />
+          <video className="fullscreen-modal__video" controlsList="nodownload" autoPlay={true} controls width="100%">
+            <source src="https://tagmango.com/staticassets/TagMango+Launch+Video+FINAL.mp4" type="video/mp4" />
           </video>
-          <button
-            onClick={() => setShowingVideo(false)}
-            className="fullscreen-modal__icon"
-          >
+          <button onClick={() => setShowingVideo(false)} className="fullscreen-modal__icon">
             ✖
           </button>
         </div>

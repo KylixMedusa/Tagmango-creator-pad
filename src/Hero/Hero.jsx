@@ -101,23 +101,12 @@ const Hero = ({ loading }) => {
         </div>
         <div className="hero--content">
           <h1>
-            A{" "}
-            <ReactTextTransition
-              text={texts[textIndex % texts.length]}
-              springConfig={presets.slow}
-              style={{ margin: "0 4px" }}
-              inline
-              overflow
-            />{" "}
-            for Creators
+            TagMango Residency Programme
           </h1>
           <p>
-            TagMango Creator Pad is India’s first Creator Home built with a
-            whole lotta love by Creators for Creators
+          2 week-cohorts for Leaders, Thinkers and Creators to meet, ideate and build together.
           </p>
-          <PopupButton id="NFK7B7tn" className="hero__button">
-            Book Now
-          </PopupButton>
+          <a href="https://forms.gle/BxgWgdRKgrZCtWSJ7" target="_blank" className="apply_now_button">Apply Now</a>
           <div className="hero--carousal">
             <div
               className={`hero--carousal__bar ${loading ? "" : "active"}`}
