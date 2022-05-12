@@ -1,7 +1,7 @@
 {
   "name": "tagmango-creator-pad",
   "version": "0.1.0",
-  "homepage": "/creator-pad",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.5",

@@ -4,10 +4,16 @@ import "@splidejs/react-splide/css";
 import "./Aminities.css";
 
 const options = {
+  perPage: 2,
   type: "loop",
   gap: "1rem",
   autoplay: true,
-  height: "425px",
+  height: "450px",
+  breakpoints: {
+    640: {
+      perPage: 1,
+    },
+  },
 };
 
 const Aminities = () => {
@@ -15,43 +21,39 @@ const Aminities = () => {
     <div className="aminities--container">
       <div className="aminities--wrapper">
         <div className="aminities--listitem">
-          <Splide options={options} aria-label="My Favorite Images">
-            <SplideSlide>
-              <img src="https://tagmango.com/staticassets/1642186429050.jpg" alt="" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="https://tagmango.com/staticassets/1642187276498.jpg" alt="" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src="https://tagmango.com/staticassets/1642187058846.jpg" alt="" />
-            </SplideSlide>
-          </Splide>
+          <figure className="aminities--figure">
+            <img src="https://tagmango.com/staticassets/1642187058846.jpg" alt="" />
+          </figure>
           <div className="aminities--content">
-            <h3 className="aminities--content--title">About Us</h3>
+            <h3 className="aminities--content--title">About the programme</h3>
             <p className="aminities--content--content">
               TagMango Residency is an in-house programme where we will bring together people who have a shared passion
               to learn and build with others. We’re starting with 4 different cohorts, each 2-week long across multiple
-              niches - Content, Finance, Web 3.0 and Start-ups.
-            </p>
-            <p className="aminities--content--content">
-              Each of these cohorts will have a multitude of creators, professionals and experts who are curious about
-              knowledge and love to share it too.
+              niches - Creator-preneurs, Finance, Web 3.0 and Start-ups.
             </p>
             <p className="aminities--content--content">
               For these 2 weeks, the cohort will be staying together at the TagMango Creator Pad, the beautiful home
-              we’ve built for all creative folks. It’s right by the Juhu beach in Mumbai and there are few (if any)
-              places with a better view (or vibe)!
+              we’ve built for all creative folks.
+            </p>
+            <p className="aminities--content--content">
+              Each of these cohorts will have a multitude of creators, professionals and experts who are curious about
+              knowledge and love to share it too. Activities and events made specific to the niche will be held to
+              ensure that you get the best out of the 2 weeks you spend there with your group.
+            </p>
+            <p className="aminities--content--content">
+              The details of each of these cohorts, and the associated basic itinerary is mentioned below (more will be
+              revealed if you’re selected for the cohort)
             </p>
           </div>
         </div>
-        <div className="about-us-more-content">
+        {/* <div className="about-us-more-content">
           <p>
             Each cohort will have activities, events and an itinerary tailor made specific to the niche to ensure that
             you get the best out of the 2 weeks you spend there with your group. The details of each of these cohorts,
             and the associated basic itinerary is mentioned below (more will be revealed if you’re selected for the
             cohort)
           </p>
-        </div>
+        </div> */}
         <div className="investorLogoBar">
           <p>BACKED BY</p>
           <div className="investorLogoBarInner">
@@ -109,7 +111,7 @@ const Aminities = () => {
         <div className="aminities--list">
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="https://tagmango.com/staticassets/1642185271253.jpg" alt="" />
+              <img src="/creator-pad/images/creatorpreneur.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -135,7 +137,7 @@ const Aminities = () => {
           </div>
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="https://tagmango.com/staticassets/1642185030206.png" alt="" />
+              <img src="/creator-pad/images/finance.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -161,7 +163,7 @@ const Aminities = () => {
           </div>
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="https://tagmango.com/staticassets/1642186184017.jpeg" alt="" />
+              <img src="/creator-pad/images/web30.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -186,7 +188,7 @@ const Aminities = () => {
           </div>
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="https://tagmango.com/staticassets/1642185839700.jpg" alt="" />
+              <img src="/creator-pad/images/startups.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -209,7 +211,7 @@ const Aminities = () => {
               </a>
             </div>
           </div>
-          <div className="aminities--listitem">
+          {/* <div className="aminities--listitem">
             <figure className="aminities--figure">
               <img src="https://tagmango.com/staticassets/1642185642264.jpg" alt="" />
             </figure>
@@ -235,8 +237,8 @@ const Aminities = () => {
                 <li>Mental and physical health instructors</li>
               </ul>
             </div>
-          </div>
-          <div className="about-us-more-content">
+          </div> */}
+          {/* <div className="about-us-more-content">
             <p>
               And this will not be the end. The community you have formed will stay forever and will enjoy premium
               TagMango benefits like access to workshops, events and Pad usage. Forever.
@@ -244,7 +246,7 @@ const Aminities = () => {
 
             <p>The crop, the soil, the fertilisers and the environmental conditions are all in place.</p>
             <p>Time to begin the Harvest.</p>
-          </div>
+          </div> */}
           {/* <div className="aminities--listitem">
             <figure className="aminities--figure">
               <img src="https://tagmango.com/staticassets/1642186429050.jpg" alt="" />
@@ -288,6 +290,43 @@ const Aminities = () => {
               </p>
             </div>
           </div> */}
+          <div className="why-is-special">
+            <p className="title-p">Why is the TagMango Residency Programme Special?</p>
+            <p className="content-p">
+              India as a country has never been shy of resources or talented individuals, however, we are so used to
+              building individually that we often forget what we’re capable of as a team.
+            </p>
+            <div className="content-slider">
+              <Splide options={options} aria-label="My Favorite Images">
+                <SplideSlide>
+                  <img src="/creator-pad/images/slider1.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/creator-pad/images/slider2.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/creator-pad/images/slider3.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/creator-pad/images/slider4.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/creator-pad/images/slider5.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/creator-pad/images/slider6.jpeg" alt="" />
+                </SplideSlide>
+              </Splide>
+            </div>
+            <p className="content-p">
+              The objective of these cohorts is to bring the best and the hungry together - so that you can maximise on
+              each other's potential, share strengths, utilise resources and solve problems by just being together.
+            </p>
+            <p className="content-p">
+              When you eat, sleep, ideate and work with the best in the business - ideas that can shape the world are
+              born. We’re here to create a community that can build the future.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -52,7 +52,7 @@ const VideoSection = () => {
       {isShowingVideo && (
         <div className="fullscreen-modal">
           <video className="fullscreen-modal__video" controlsList="nodownload" autoPlay={true} controls width="100%">
-            <source src="https://tagmango.com/staticassets/TagMango+Launch+Video+FINAL.mp4" type="video/mp4" />
+            <source src="/creator-pad/images/videosection.mp4" type="video/mp4" />
           </video>
           <button onClick={() => setShowingVideo(false)} className="fullscreen-modal__icon">
             ✖

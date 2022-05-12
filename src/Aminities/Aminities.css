@@ -286,7 +286,6 @@
   display: block;
   margin: 0 auto;
   border-radius: 12px;
-  box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
 }
 
 .splide img {
@@ -296,7 +295,12 @@
   object-fit: cover;
 }
 
-/* .splide__arrow,
 .splide__pagination {
   display: none;
-} */
+}
+
+.splide__arrow {
+  background: #fff;
+  height: 3em;
+  width: 3em;
+}
