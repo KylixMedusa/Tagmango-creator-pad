@@ -14,7 +14,7 @@ const VideoSection = () => {
         <div className="video-section__container">
           <div className="video-section__text-container">
             <h2>
-              <span>The Story</span>TagMango Creator Pad
+              <span>The Story</span>TagMango Residency Programme
             </h2>
             <p>
               History is testimony to the fact that the best ideas have come to fruition when people have come together.
@@ -52,7 +52,7 @@ const VideoSection = () => {
       {isShowingVideo && (
         <div className="fullscreen-modal">
           <video className="fullscreen-modal__video" controlsList="nodownload" autoPlay={true} controls width="100%">
-            <source src="/creator-pad/images/videosection.mp4" type="video/mp4" />
+            <source src="/images/videosection.mp4" type="video/mp4" />
           </video>
           <button onClick={() => setShowingVideo(false)} className="fullscreen-modal__icon">
             ✖

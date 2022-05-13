@@ -10,10 +10,6 @@ const Finalcta = () => {
           <a href="https://forms.gle/BxgWgdRKgrZCtWSJ7" target="_blank" className="apply_now_white_button">
             Apply Now
           </a>
-          <span>
-            P.S. With the Covid restrictions in place, the pad is open with a limited capacity for now. Book your slots
-            in the form above and we’ll get in touch with you.
-          </span>
         </div>
       </div>
       <div className="heroFeaturedWrapper">

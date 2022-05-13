@@ -111,7 +111,7 @@ const Aminities = () => {
         <div className="aminities--list">
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="/creator-pad/images/creatorpreneur.jpeg" alt="" />
+              <img src="/images/creatorpreneur.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -137,7 +137,7 @@ const Aminities = () => {
           </div>
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="/creator-pad/images/finance.jpeg" alt="" />
+              <img src="/images/finance.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -163,7 +163,7 @@ const Aminities = () => {
           </div>
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="/creator-pad/images/web30.jpeg" alt="" />
+              <img src="/images/web30.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -188,7 +188,7 @@ const Aminities = () => {
           </div>
           <div className="aminities--listitem">
             <figure className="aminities--figure">
-              <img src="/creator-pad/images/startups.jpeg" alt="" />
+              <img src="/images/startups.jpeg" alt="" />
             </figure>
             <div className="aminities--content">
               <h3 className="aminities--content--title">
@@ -291,7 +291,9 @@ const Aminities = () => {
             </div>
           </div> */}
           <div className="why-is-special">
-            <p className="title-p">Why is the TagMango Residency Programme Special?</p>
+            <div className="aminities--title">
+              <h2>Why is the TagMango Residency Programme Special?</h2>
+            </div>
             <p className="content-p">
               India as a country has never been shy of resources or talented individuals, however, we are so used to
               building individually that we often forget what we’re capable of as a team.
@@ -299,22 +301,37 @@ const Aminities = () => {
             <div className="content-slider">
               <Splide options={options} aria-label="My Favorite Images">
                 <SplideSlide>
-                  <img src="/creator-pad/images/slider1.jpeg" alt="" />
+                  <img src="/images/slider1.jpeg" alt="" />
                 </SplideSlide>
                 <SplideSlide>
-                  <img src="/creator-pad/images/slider2.jpeg" alt="" />
+                  <img src="/images/slider2.jpeg" alt="" />
                 </SplideSlide>
                 <SplideSlide>
-                  <img src="/creator-pad/images/slider3.jpeg" alt="" />
+                  <img src="/images/slider3.jpeg" alt="" />
                 </SplideSlide>
                 <SplideSlide>
-                  <img src="/creator-pad/images/slider4.jpeg" alt="" />
+                  <img src="/images/slider4.jpeg" alt="" />
                 </SplideSlide>
                 <SplideSlide>
-                  <img src="/creator-pad/images/slider5.jpeg" alt="" />
+                  <img src="/images/slider5.jpeg" alt="" />
                 </SplideSlide>
                 <SplideSlide>
-                  <img src="/creator-pad/images/slider6.jpeg" alt="" />
+                  <img src="/images/slider6.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/images/slider7.jpg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/images/slider8.jpg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/images/slider9.jpg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/images/slider10.jpeg" alt="" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src="/images/slider11.jpeg" alt="" />
                 </SplideSlide>
               </Splide>
             </div>
